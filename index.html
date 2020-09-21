@@ -10,44 +10,44 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+        <header class="header">
+            <img src="img/лого.svg" alt="logo Vasilyuk" class="logo"> 
+            <nav class="main-nav"> 
+                <ul class="list">
+                    <li class="item">
+                        <a href="#" class="about-me">Про мене </a>
+                    </li>            
+                    <li class="item">
+                        <a href="#" class="photographer-service">Послуги фотографа </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="contact">Контакти </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="profit">Переваги </a>
+                    </li>
+                    <li class="item">
+                        <a href="#"class="Procedure"> Порядок роботи </a>
+                    </li>
+                    <li class="item">
+                        <a href="#" class="review">Відгуки </a>
+                    </li>
+                    <li class="item">
+                        <a class="contact-link" href="tel:+380508505888">+38 (050) 850 58 88</a>
+                    </li> 
+                </ul> 
+            </nav>       
+            <img src="img/Vector.jpg" alt="bag" class="bag">                    
+        </header>
         <main>
-            <header class="header">
-                <img src="img/лого.svg" alt="logo Vasilyuk" class="logo"> 
-                <nav class="main-nav"> 
-                    <ul class="list">
-                        <li class="item">
-                            <a href="#" class="about-me">Про мене </a>
-                        </li>            
-                        <li class="item">
-                            <a href="#" class="photographer-service">Послуги фотографа </a>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="contact">Контакти </a>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="profit">Переваги </a>
-                        </li>
-                        <li class="item">
-                            <a href="#"class="Procedure"> Порядок роботи </a>
-                        </li>
-                        <li class="item">
-                            <a href="#" class="review">Відгуки </a>
-                        </li>
-                        <li class="item">
-                            <a class="contact-link" href="tel:+380508505888">+38 (050) 850 58 88</a>
-                        </li> 
-                    </ul> 
-                </nav>       
-                <img src="img/Vector.jpg" alt="bag" class="bag">                    
-            </header>
             <h1 class="love-description-1">Сімейний фотограф</h1>
             <figure class="love-figure">         
                 <figcaption class="love-description-2">Фотозйомки в Києві та області. Збережу <br>ваші незабутні моменти назавжди</figcaption>
                 <img src="img/love.png" alt="love"class="love-img">
-                <button class="button-1">Замовити зйомку</button>
+                <a class="button-1" href="#popup1" >Замовити зйомку</a>
             </figure>
             <figure>  
-                <img src="./img/2 1.png" alt="about me" class="nikon">
+                <img src="./img/2_1.png" alt="about me" class="nikon">
                 <figcaption class="nikon-description-1">Про мене</figcaption>
                 <figcaption class="nikon-description-2">Я завжди прагну відобразити натуральність образу — емоційність і щирість. Продумана композиція, підготовлений образ, і непідробні емоції — забезпечують можливість створити дійсно зачаровуючу фотографію. Буду корисний Вам в збереженні пам’ятних і яскравих моментів вашого життя.</figcaption> 
             </figure> 
@@ -141,9 +141,6 @@
                     <img src="./img/face 1.svg" class="icon-adv">
                     <p class="description-advantages">Справжні емоції</p>
                 </section>
-
-
-
             </figure>
             <figure class="frame-3">
                 <p class="operating-procedure">Порядок роботи</p>
@@ -191,18 +188,79 @@
                     <img src="./img/girl-2169467_1920 2.svg" class="photo">
                 </section>
             </figure>
-            <button class="button-2">Замовити зйомку</button>
+            <a class="button-2" href="#popup1">Замовити зйомку</a>
             <figure class="frame-4">
                 <p class="reviews">Відгуки</p>
                 <section class="mosaic_13">
+                    <img src="./img/stars1.svg" class="stars-1">
                     <p class="list-text-2">Олена</p>
                     <p class="list-text-3"> 02.05.2020 </p>
+                    <p class="list-description-1">Дякую!<br>Дуже круті фото.</p>
+                </section >
+                <section class="mosaic_14">
+                    <img src="./img/stars3.svg" class="stars-2">
+                    <p class="list-text-2">Андрій</p>
+                    <p class="list-text-3">02.10.2019</p>
+                    <p class="list-description-1">Забрали фотки і альбом, дуже класно вийшло. Якість вражає!</p>
                 </section>
-
+                <section class="mosaic_15">
+                    <img src="./img/stars3.svg" class="stars-3">
+                    <p class="list-text-2">Дарина</p>
+                    <p class="list-text-3">18.03.2020</p>
+                    <p class="list-description-1">Олексій, хочу ще раз подякувати за фото. Вони крутееезні! Тепер буду знати до кого звертатися та кого радить друзям! Все супер. Дякую!</p>
+                </section>
+                <img src="./img/Arrow 2.svg" class="arrow-2">
+                <img src="./img/слайдер.svg" class="slider">
+                <img src="./img/Arrow 1.svg" class="arrow-1">
             </figure>    
-        </main>    
-    <footer>
-
+            <div id="popup1" class="overlay">
+                <div class="popup">
+                    <form action="/resend" method="POST">
+                        <legend class="popname">Зворотній зв'язок</legend>
+                        <a class="close" href="#">&times;</a>
+                        <class class="content">
+                            <div class="inpopname">
+                                <p><label for="username" >Ім'я</label>
+                                <input type="text" id="username" name="name" placeholder="Як до Вас звертатися?" ></p>
+                            </div>
+                            <div class="inpopphone">
+                                <p><label for="tel">Телефон</label>
+                                <input type="tel" id="tel" name="phone" placeholder="Введіть номер"></p>
+                            </div>
+                            <button type="submit" class="btn">Замовити зйомку</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>            
+    <footer class="footer">
+        <nav class="nav-1">
+            <a href="#" class="phone">+38 (050) 850 58 88</a>
+            <a href="#" class="email">photik.info@gmail.com</a>
+            <a href="#" class="map">Україна, м. Київ</a>
+        </nav>              
+        <nav class="nav-2">
+            <a href="#" class="wedd">Весільна фотосесія</a>
+            <a href="#" class="school">Фотозйомка випускних</a>
+            <a href="#" class="studio">Фотосесії в студії</a>
+        </nav>                
+        <div class="social-descripion-container">
+            <p class="social-description">Мене можна знайти в соціальних мережах</p>
+        </div>
+        <nav class="social-icons">            
+            <figure class="social-instagram">
+                <a href="https://www.instagram.com/olexgood/?hl=ru"><img src="./img/инстаграм.svg"></a>
+            </figure>
+            <figure class="social-facebook">
+                <a href="https://www.facebook.com/Olex1405"><img src="./img/фейсбук.svg"></a>
+            </figure>
+            <figure class="social-whatsapp">
+                <a href="https://wa.me/+380508505888"><img src="./img/ватсап.svg"></a>
+            </figure>
+            <figure class="social-tg">
+                <a href="t.me/Olexgood"><img src="./img/tg_50х44.svg"></a>
+            </figure>
+        </nav>
     </footer>
     </body>
 
