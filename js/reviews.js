@@ -106,3 +106,4 @@ reviewsBtn.addEventListener("click", (e) => {
 if (document.defaultView.innerWidth > 540) {
   reviews.style.display = "flex";
 }
+ 

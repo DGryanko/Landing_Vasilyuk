@@ -24,3 +24,4 @@ const openModal = (e) => {
 modalClose.addEventListener("click", closeModal);
 
 document.addEventListener("click", openModal);
+ 

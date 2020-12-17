@@ -68,3 +68,4 @@ if (document.defaultView.innerWidth > 540) {
   portfolio.innerHTML = createPortfolio(portfolioArr, portfolioArr.length);
   portfolioMore.style.display = "none";
 }
+ 

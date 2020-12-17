@@ -12,7 +12,7 @@ let menuActive = { status: false };
 //     nav.style.display = "none";
 //     document.removeEventListener("click", menuBlure);
 //   }
-// };
+// }; 
 const menuClick = (e) => {
   console.dir(e.currentTarget);
   if (e?.currentTarget) {
