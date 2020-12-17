@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/aos.css">
+
 
 </head>
 
@@ -20,7 +22,7 @@
                 <img src="/img/menu.svg" alt="menu">
             </div>
             <div class="header_logo">
-                <img src="/img/logo.svg" alt="header_logo">
+                <a href="#about-me"><img src="/img/logo.svg" alt="header_logo"></a>
             </div>
             <ul id="JS_Nav" class="header_nav" data-id="JS_Nav__close">
                 <li class="header_nav__item" data-id="JS_Nav__close">
@@ -33,7 +35,7 @@
                     <a href="#contacts" data-id="JS_Nav__close"> Контакти </a>
                 </li>
                 <li class="header_nav__item" data-id="JS_Nav__close">
-                    <a href="#advantages" data-id="JS_Nav__close"> Переваги </a>
+                    <a href="#price" data-id="JS_Nav__close"> Прайс </a>
                 </li>
                 <li class="header_nav__item" data-id="JS_Nav__close">
                     <a href="#operating-procedure"" data-id=" JS_Nav__close"> Порядок роботи </a>
@@ -45,9 +47,9 @@
             <div class="menu_tel">
                 <a href="tel:+380508505888">+38 (050) 850 58 88</a>
             </div>
-            <div class="header_busket header_none_2">
+            <!-- <div class="header_busket header_none_2">
                 <img src="/img/busket.svg" alt="">
-            </div>
+            </div> -->
         </section>
     </header>
     <main>
@@ -105,7 +107,7 @@
             </div>
         </section>
         <!-- About me -->
-        <section id="about-me" class="about_me container">
+        <section id="about-me" class="about_me container" data-aos="zoom-in">
             <h2>Про мене</h2>
             <div>
                 <img src="./img/2_1.png">
@@ -115,14 +117,62 @@
             </div>
         </section>
         <!-- Portfolio -->
-        <section class="portfolio container padding_top">
+        <section class="portfolio container padding_top" data-aos="zoom-in">
             <p id="service" class="service">Послуги фотографа</p>
             <!-- Портфолио -->
             <ul class="portfolio_cards" id='JS_Portfolio'></ul>
             <button class="portfolio_more" id="JS_Portfolio__Show">Всі послуги</button>
         </section>
+        <section class="container" data-aos="zoom-in" id="price">
+            <div class="packs_wrapper" data-aos="fade-right">
+                <div class="packs_item">
+                    <img src="./img/persons-731514_1920 1.png" alt="img" />
+                    <div class="packs_item_border">
+                        <h3 class="packs_title">
+                            Optimal
+                        </h3>
+                        <p class="packs_description">
+                            <span>- 1 Преимущество!</span>
+                            <span>- 2 Преимущество!</span>
+                            <span>- 3 Преимущество!</span>
+                            <span>- 4 Преимущество!</span>
+                            <span>- 5 Преимущество!</span>
+                            <span>- 6 Преимущество!</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="packs_item selected" data-aos="fade-left">
+                    <img src="./img/persons-731514_1920 1.png" alt="img" />
+                    <h3 class="packs_title">
+                        Comfort
+                    </h3>
+                    <p class="packs_description">
+                        <span>- 1 Преимущество!</span>
+                        <span>- 2 Преимущество!</span>
+                        <span>- 3 Преимущество!</span>
+                        <span>- 4 Преимущество!</span>
+                        <span>- 5 Преимущество!</span>
+                        <span>- 6 Преимущество!</span>
+                    </p>
+                </div>
+                <div class="packs_item" data-aos="fade-right">
+                    <img src="./img/persons-731514_1920 1.png" alt="img" />
+                    <h3 class="packs_title">
+                        Luxury
+                    </h3>
+                    <p class="packs_description">
+                        <span>- 1 Преимущество!</span>
+                        <span>- 2 Преимущество!</span>
+                        <span>- 3 Преимущество!</span>
+                        <span>- 4 Преимущество!</span>
+                        <span>- 5 Преимущество!</span>
+                        <span>- 6 Преимущество!</span>
+                    </p>
+                </div>
+            </div>
+        </section>
         <!-- Advantages -->
-        <section class="container padding_top">
+        <!-- <section class="container padding_top">
             <h2 id="advantages" class="headers">Переваги</h2>
             <ul class="advantages_list">
                 <li class="advantages_item">
@@ -151,9 +201,9 @@
                     <p class="advantages_description">Справжні емоції</p>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <!-- Рrocedure -->
-        <section class="procedure container padding_top">
+        <!-- <section class="procedure container padding_top">
             <h2 id="operating-procedure" class="procedure_title ">Порядок роботи</h2>
             <div class="procedure_wrap">
                 <ul class="procedure_list">
@@ -200,14 +250,15 @@
                 </ul>
                 <img src="./img/girl-2169467_1920 2.svg" class="photo">
             </div>
-        </section>
+        </section> -->
         <section class="container">
             <div class="center_button">
                 <button class="button" data-modal="JS_MODAL__OPEN">Замовити зйомку</button>
             </div>
         </section>
         <section class="price">
-            <h2 class="price_text"><span>1600 грн</span> - година фотосесії</h2>
+            <span></span>
+            <h2 class="price_text printed"><span>1600 грн</span> - година фотосесії.</h2>
         </section>
         <section class="reviews container">
             <h3 id="reviews" class="reviews_title">Відгуки</h3>
@@ -257,12 +308,14 @@
                 </ul>
             </div>
         </div>
-        <div class="copyright">2020 © <span itemprop="name">Margaret Kery</span></div>
+        <div class="copyright">2020 © Margaret Kery</div>
     </footer>
     <script src="/js/menu.js"></script>
     <script src="/js/portfolio.js"></script>
     <script src="/js/reviews.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/animation-on-scroll.js"></script>
 </body>
 
 </html>
