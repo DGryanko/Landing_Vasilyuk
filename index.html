@@ -8,14 +8,34 @@
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="./css/preloader.css">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S0MNFK0DXH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-S0MNFK0DXH');
+    </script>
 
 
 </head>
 
 <body>
-
+    <!-- Прелоадер -->
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
     <header>
         <section class="header container">
             <div id="JS_Menu" class="header_burger" data-id="JS_Nav__close">
@@ -310,6 +330,15 @@
         </div>
         <div class="copyright">2020 © Margaret Kery</div>
     </footer>
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
     <script src="./js/menu.js"></script>
     <script src="./js/portfolio.js"></script>
     <script src="./js/reviews.js"></script>
